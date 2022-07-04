@@ -1,0 +1,122 @@
+.container {
+  padding: 30px;
+  margin-bottom: 15px;
+  border: #adb5bd solid;
+  border-radius: 10px;
+}
+
+h3 {
+  color: #0d6efd;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+h1 {
+  color: #031633;
+  font-weight: 400;
+  font-size: 65px;
+}
+h1 img {
+  margin: 0px;
+  margin-right: 5px;
+  float: left;
+  height: 80px;
+  width: 80px;
+}
+
+h1 .units {
+  position: relative;
+  font-size: 18px;
+  top: -34px;
+}
+h1 .active {
+  color: #0d6efd;
+  cursor: default;
+}
+h1 .active:hover {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  color: #0d6efd;
+  font-size: 20px;
+  font-weight: 700;
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 0 5px;
+}
+
+li {
+  display: inline;
+  margin: 0 15px;
+  /*расстояние между пунктами по ширине*/
+}
+
+a {
+  text-decoration: none;
+  color: #031633;
+  /*убираем подчеркивание текста ссылок*/
+}
+
+.form {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+button {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  margin: 0 15px;
+}
+.temperatures {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+  color: #031633;
+  padding: 0px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.temperature-nav-1,
+.temperature-nav-2,
+.temperature-nav-3 {
+  margin: 0 5px;
+  text-align: justify;
+}
+
+.temperature-nav-1 {
+  font-size: 16px;
+}
+
+.description {
+  padding: 10px 10px;
+}
+
+.dopinf {
+  position: relative;
+  flex-wrap: wrap;
+  text-align: right;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #031633;
+  font-weight: 700;
+}
+
+h4 {
+  color: #031633;
+  font-weight: 700;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 10px;
+}

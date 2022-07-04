@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wheather App</title>
+    <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container col-sm-6">
+        <div class="row">
+            <ul class="nav col-12">
+                <li>
+                    Bern
+                </li>
+                <li>
+                    Paris
+                </li>
+                <li>
+                    Sydney
+                </li>
+                <li>
+                    Kyiv
+                </li>
+            </ul>
+
+            <form class="form col-12" id="search-form">
+                <div class="col-5">
+                    <input type="text" class="form-control" placeholder="Enter a city" aria-label="city"
+                        id="city-input" />
+                </div>
+                <div class="col-3 d-grid">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+
+                <div class="col-3 d-grid">
+                    <button type="submit" class="btn btn-success" id="сurrent-location-button">
+                        Current
+                    </button>
+                </div>
+            </form>
+
+            <div class="col-4">
+                <h3 id="city">
+
+                </h3>
+
+                <h4>Sunday 16:31</h4>
+
+                <div class="description">
+                    Sunny
+                </div>
+            </div>
+            <div class="temperatures col-7">
+                <ul class="temperature-nav-1">
+                    <li>
+                        <a href="#" target="_blank">Mon</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Tue</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Wen</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Thu</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Fri</a>
+                    </li>
+                </ul>
+                <ul class="temperature-nav-2">
+                    <li>
+                        <a href="#" target="_blank">☀</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">🌤</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">🌦</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">🌤</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">☀</a>
+                    </li>
+                </ul>
+                <ul class="temperature-nav-3">
+                    <li>
+                        <a href="#" target="_blank">28°</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">21°</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">18°</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">24°</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">25°</a>
+                    </li>
+                </ul>
+            </div>
+
+            <h1 class="col-7"><img src="" alt="Clear" id="icon" class="float-left" />
+
+                <strong id="temperature"></strong>
+                <span class="units"><a href="#" id="celsius-link" class="active">℃</a>|<a href="#"
+                        id="fahrenheit-link">℉</a>
+                </span>
+
+
+            </h1>
+
+            <div class="dopinformation col-4">
+                <ul class="dopinf">
+                    <li>
+                        <strong>Pressure:</strong>
+                        <span id="pressure"> 78</span>p
+                    </li>
+                    <li>
+                        <strong>Wind: </strong>
+                        <span id="wind"> 4 </span>km/h
+                    </li>
+                    <li><strong>Humidity: </strong> <span id="humidity"> 77</span>%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
