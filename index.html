@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Wheather App</title>
+    <title>☀️ Wheather App</title>
     <meta charset="UTF-8" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
@@ -15,24 +15,9 @@
         <div class="weather-app-wrapper">
             <div class="weather-app">
                 <div class="row">
-                    <ul class="nav col-12">
-                        <li>
-                            Bern
-                        </li>
-                        <li>
-                            Paris
-                        </li>
-                        <li>
-                            Sydney
-                        </li>
-                        <li>
-                            Kyiv
-                        </li>
-                    </ul>
-
                     <form class="form col-12" id="search-form">
                         <div class="col-5">
-                            <input type="text" class="form-control" placeholder="Enter a city" aria-label="city"
+                            <input type="search" class="form-control" placeholder="Enter a city" aria-label="city"
                                 id="city-input" />
                         </div>
                         <div class="col-3 d-grid">
@@ -51,87 +36,42 @@
 
                         </h3>
 
-                        <h4>Sunday 16:31</h4>
+                        <h4>
+                            <span id="date">
 
-                        <div class="description">
+                            </span>
+                        </h4>
+
+                        <div id="description">
                             Sunny
                         </div>
                     </div>
-                    <div class="temperatures col-7">
-                        <ul class="temperature-nav-1">
-                            <li>
-                                <a href="#" target="_blank">Mon</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">Tue</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">Wen</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">Thu</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">Fri</a>
-                            </li>
-                        </ul>
-                        <ul class="temperature-nav-2">
-                            <li>
-                                <a href="#" target="_blank">☀</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">🌤</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">🌦</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">🌤</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">☀</a>
-                            </li>
-                        </ul>
-                        <ul class="temperature-nav-3">
-                            <li>
-                                <a href="#" target="_blank">28°</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">21°</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">18°</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">24°</a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">25°</a>
-                            </li>
-                        </ul>
+                    <div class="col-8">
+                        <div class="weather-forecast" id="forecast">
+
+                        </div>
                     </div>
+
 
                     <h1 class="col-7"><img src="" alt="Clear" id="icon" class="float-left" />
 
-                        <strong id="temperature"></strong>
-                        <span class="units"><a href="#" id="celsius-link" class="active">℃</a>|<a href="#"
-                                id="fahrenheit-link">℉</a>
+                        <strong id="temperature"></strong><span class="units"> ℃
                         </span>
 
 
                     </h1>
 
                     <div class="dopinformation col-4">
-                        <ul class="dopinf">
+                        <ul id="dopinf">
                             <li>
-                                <strong>Pressure:</strong>
+                                <b>Pressure:</b>
                                 <span id="pressure"> 78</span>p
                             </li>
                             <li>
-                                <strong>Wind: </strong>
+                                <b>Wind: </b>
                                 <span id="wind"> 4 </span>km/h
                             </li>
-                            <li><strong>Humidity: </strong> <span id="humidity"> 77</span>%</li>
+                            <li><b>Humidity: </b> <span id="humidity"> 77</span>%</li>
                         </ul>
                     </div>
                 </div>
